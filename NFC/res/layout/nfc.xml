@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="2" >
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tagIdLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="Location Reader" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tagIdLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="Tag ID" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/tagIdVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:paddingRight="20dip"
+                android:text="" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/mobIdLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="Mobile ID" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/mobIdVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:paddingRight="20dip"
+                android:text="" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/locLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="Location" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/locVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:text="" >
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/latitudeLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="Latitude" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/latval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:enabled="true"
+                android:text="" >
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/longitudeLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:text="Longitude" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/longval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dip"
+                android:enabled="true"
+                android:text="" >
+            </EditText>
+        </TableRow>
+
+        <!--
+          	<TableRow android:id="@+id/tableRow9" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<Button android:layout_height="wrap_content"
+				android:paddingLeft="20dip" android:layout_weight="1"
+				android:layout_width="wrap_content" android:text="Save" android:id="@+id/saveBtn"></Button>
+			<Button android:layout_height="wrap_content"
+				android:paddingRight="20dip" android:layout_weight="1"
+				android:layout_width="wrap_content" android:text="Send" android:id="@+id/sendBtn"></Button>
+		</TableRow>
+        -->
+
+        <TableRow>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="20dip"
+            android:text="Save" >
+        </Button>
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="20dip"
+            android:text="Send" >
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dip"
+        android:paddingBottom="10dip"
+        android:paddingRight="10dip"
+        android:text="Powered by Wifinity"
+        android:textSize="10dip"
+        android:textStyle="italic" >
+    </TextView>
+
+</LinearLayout>
